@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Introduction | Probando jazer plugin</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="@%@blk1@%@">
+        <meta name="description" content="See the deployment of this example at gh-pages.">
         <meta name="generator" content="GitBook 2.6.7">
         
         
@@ -55,7 +55,7 @@
         data-chapter-title="Introduction"
         data-filepath="README.md"
         data-basepath="."
-        data-revision="Fri Mar 25 2016 15:41:40 GMT+0000 (WET)"
+        data-revision="Fri Mar 25 2016 19:27:57 GMT+0000 (WET)"
         data-innerlanguage="">
     
 
@@ -148,7 +148,24 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="probando-jazer-plugin">Probando <code>jazer</code> plugin</h1>
-<p><div class="regexp">
+<p>See the deployment of this example 
+at <a href="http://ull-esit-gradoii-tfg.github.io/regexp-gbp/" target="_blank">gh-pages</a>.</p>
+<pre><code>{% regexp %}
+&#xBF;Quienes reinaban en Espa&#xF1;a cuando se descubri&#xF3; America?
+{% solution %}
+Los Reyes Cat&#xF3;licos
+{% validation %}
+/
+  (Isabel\s+                    # nombre sencillo
+  ((I\s+)?de\s+Castilla\s+)?    # titulo de Isabel
+  y
+  \s+Fernando                   # nombre sencillo
+  (\s+(II\s+)?de\s+Arag[o&#xF3;]n)?) # titulo de Fernando
+|
+  (Reyes\s+Cat[o&#xF3;]licos)  # conocidos tambi&#xE9;n por este nombre
+/ix
+{% endregexp %}
+</code></pre><p><div class="regexp">
 	<div class="header">Regexp</div>
 	<div class="message">
 		
